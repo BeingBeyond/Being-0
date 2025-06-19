@@ -9,9 +9,12 @@
     <title>Being-0: A Humanoid Robotic Agent with Vision-Language Models and Modular Skills</title>
     
     <script>
-    if (window.location.pathname.toLowerCase() === "/being-0/" || window.location.pathname.toLowerCase() === "/being-0") {
-        window.location.href = "https://beingbeyond.github.io/Being-0/";
-    }
+      const path = window.location.pathname;
+      if (path.toLowerCase() === "/being-0/" || path.toLowerCase() === "/being-0") {
+        window.location.replace("https://beingbeyond.github.io/Being-0/");
+      } else {
+        document.write("<h1>Page not found</h1>");
+      }
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
